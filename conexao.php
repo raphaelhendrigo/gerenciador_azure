@@ -4,7 +4,7 @@
 date_default_timezone_set('America/Sao_Paulo');
 
 // Dados conexão bd local
-$servidor = 'gerenciador-acervo.azurewebsites.net';
+$servidor = 'biblioteca-acervo.mysql.database.azure.com';
 $banco = 'biblioteca-acervo';
 $usuario = 'rafael';
 $senha = '@cervoSJC';
@@ -20,7 +20,7 @@ try {
 $nome_sistema = 'Gerenciador de Acervo Tecnico';
 $email_sistema = 'contato@hugocursos.com.br';
 $telefone_sistema = '(31)97527-5084';
-$url_sistema = 'gerenciador-acervo.azurewebsites.net';
+$url_sistema = 'biblioteca-acervo.mysql.database.azure.com';
 
 // Consultar a tabela config
 $query = $pdo->prepare("SELECT * from config");
