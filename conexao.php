@@ -6,7 +6,7 @@ date_default_timezone_set('America/Sao_Paulo');
 // Dados conexão bd local
 $servidor = 'biblioteca-acervo.mysql.database.azure.com';
 $banco = 'biblioteca-acervo';
-$usuario = 'rafael';
+$usuario = 'raphael';
 $senha = '@cervoSJC';
 
 // Tentar conectar ao banco de dados
