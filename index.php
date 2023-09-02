@@ -39,7 +39,7 @@
 // 	$telefone_sistema = $res[0]['telefone'];
 // 	//... as outras variáveis que você mencionou anteriormente
 // }
-echo "qualquer coisa";
+echo "qualquer coisa 2";
 ?>
 
 <!DOCTYPE html>
