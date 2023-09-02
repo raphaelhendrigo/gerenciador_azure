@@ -9,18 +9,11 @@ $banco = 'biblioteca-acervo';
 $usuario = 'raphael';
 $senha = '@cervoSJC';
 
-$options = [
-	PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-	PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-	PDO::ATTR_EMULATE_PREPARES => false,
-	PDO::MYSQL_ATTR_SSL_CA => '/path/to/ca.pem',
-	PDO::MYSQL_ATTR_SSL_CERT => '/path/to/client-cert.pem',
-	PDO::MYSQL_ATTR_SSL_KEY => '/path/to/client-key.pem'
-];
+
 
 // Tentar conectar ao banco de dados
 try {
-	$pdo = new PDO("mysql:dbname=$banco;host=$servidor;charset=utf8", $usuario, $senha, $options);
+	$pdo = new PDO("mysql:dbname=$banco;host=$servidor;charset=utf8", $usuario, $senha);
 } catch (PDOException $e) {
 	die('Erro ao conectar ao banco de dados!<br>' . $e->getMessage());
 }
